@@ -1,0 +1,39 @@
+<template>
+
+    <lightning-input
+        label="Search Case"
+        onchange={handlechange}>
+    </lightning-input>
+
+    <lightning-card title="Case Details">
+
+        <lightning-datatable
+            key-field="Id"
+            data={services}
+            columns={columns}
+            hide-checkbox-column
+            onsave={handlesave}
+            onrowaction={handlerowaction}
+            onsort={handlesort}
+            sorted-by={sortedBy}
+            sorted-direction={sortedDirection}>
+        </lightning-datatable>
+
+        <div class="slds-p-around_medium">
+
+            <lightning-button
+                label="Previous"
+                onclick={handleprevious}>
+            </lightning-button>
+
+            <lightning-button
+                label="Next"
+                onclick={handlenext}
+                class="slds-m-left_small">
+            </lightning-button>
+
+        </div>
+
+    </lightning-card>
+
+</template>

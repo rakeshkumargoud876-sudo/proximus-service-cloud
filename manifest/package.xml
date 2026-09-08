@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Custom Object -->
+    <types>
+        <members>Service_Subscription__c</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Platform Event -->
+    <types>
+        <members>Tower_Failure__e</members>
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Custom Fields on Account -->
+    <types>
+        <members>Account.Customer_Status__c</members>
+        <members>Account.Customer_Type__c</members>
+        <name>CustomField</name>
+    </types>
+
+    <!-- Apex Classes -->
+    <types>
+        <members>AccountTriggerHandler</members>
+        <members>accountController</members>
+        <members>AccountService</members>
+        <members>cutsomer360_1</members>
+        <members>Customer360_2</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Apex Triggers -->
+    <types>
+        <members>AccountTrigger</members>
+        <members>Tower_Failure_Control</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- Flows -->
+    <types>
+        <members>Activate_Customer_Account</members>
+        <members>Case_Entitlement_Assignment_Flow</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Lightning Web Components -->
+    <types>
+        <members>customer360_1</members>
+        <members>customer360_2</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <version>66.0</version>
+
+</Package>

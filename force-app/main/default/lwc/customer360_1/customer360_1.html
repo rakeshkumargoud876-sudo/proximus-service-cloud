@@ -1,0 +1,24 @@
+<template>
+    <lightning-input label="search" onchange={handlechange}></lightning-input>
+
+    <lightning-card title="Service subscription details">
+
+    <lightning-datatable
+    key-field="Id"
+    data={services}
+    columns={columns}
+    hide-checkbox-column
+    onsave={handlesave}
+    onrowaction={handlerowaction}
+    onsort={handlesort}
+    sorted-by={sortedBy}
+    sorted-direction={sortedDirection}>
+>
+</lightning-datatable>
+   
+    </lightning-card>
+    <lightning-button label="Previous" onclick={handleprevious}></lightning-button>
+     <lightning-button label="Next" onclick={handlenext}></lightning-button>
+     
+
+</template>
